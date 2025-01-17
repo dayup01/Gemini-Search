@@ -34,5 +34,6 @@
         "memory": 512,
         "maxDuration": 30
      }
-  }
+  },
+  "publish":"dist/public"
 }
