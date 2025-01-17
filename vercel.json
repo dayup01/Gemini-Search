@@ -1,0 +1,38 @@
+{
+    "version": 2,
+    "builds": [
+    {
+        "src": "package.json",
+        "use": "@vercel/node",
+            "config": {
+              "nodeVersion": "18.x",
+                "npm" : {
+                 "production": false
+               }
+        }
+     }
+    ],
+      "routes": [
+        {
+         "src": "/(.*)",
+         "dest": "/server/index.ts"
+        }
+     ],
+     "headers": [
+      {
+          "source":"/(.*)",
+          "headers": [
+              {
+                  "key":"Cache-Control",
+                  "value":"public, max-age=0, must-revalidate"
+              }
+          ]
+      }
+    ],
+  "functions": {
+   "server/index.ts": {
+        "memory": 512,
+        "maxDuration": 30
+     }
+  }
+}
