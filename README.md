@@ -7,6 +7,10 @@ Created by [@ammaar](https://x.com/ammaar)
 ![Kapture 2025-01-04 at 14 35 14](https://github.com/user-attachments/assets/2302898e-03ae-40a6-a16c-301d6b91c5af)
 
 
+## Vercel 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dayup01/Gemini-Search&env=GOOGLE_API_KEY)
+
+
 ## Features
 
 - 🔍 Real-time web search integration
